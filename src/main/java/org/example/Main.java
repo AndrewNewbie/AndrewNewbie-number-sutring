@@ -5,12 +5,12 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int[] arr = new int[5];//we create an array
-        for (int i = 0; i < arr.length; i++) {//We initialize the array
+        int[] arr = new int[5];
+        for (int i = 0; i < arr.length; i++) {
             System.out.println("Введите число: ");
             int value = scanner.nextInt();
             if (i==0){ arr[i] = value;}
-            for (int j = 0; j < i; j++) {//create a loop to check the array for the same numbers
+            for (int j = 0; j < i; j++) {
                 if (value == arr[j]) {
                     while (value == arr[j]) {
                         System.out.println("Таке число вже є,введите повторно число: ");
